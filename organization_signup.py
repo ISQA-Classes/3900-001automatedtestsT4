@@ -29,7 +29,6 @@ class Blog_ATS(unittest.TestCase):
         elem = driver.find_element_by_id("id_address")
         elem.send_keys(id_address)
         elem = driver.find_element_by_id("id_state")
-
         elem.send_keys(id_state)
         elem = driver.find_element_by_id("id_city")
         elem.send_keys(id_city)
