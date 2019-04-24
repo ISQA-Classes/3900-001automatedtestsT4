@@ -51,7 +51,7 @@ class forgotPassword(unittest.TestCase):
         driver.find_element_by_id("id_phone").clear()
         time.sleep(1)
         elem = driver.find_element_by_id("id_phone")
-        elem.send_keys("4023214234")
+        elem.send_keys("1234567890")
         time.sleep(1)
 
         driver.find_element_by_id("id_zipcode").clear()
@@ -61,12 +61,17 @@ class forgotPassword(unittest.TestCase):
         time.sleep(1)
 
         elem = driver.find_element_by_id("id_email")
+        time.sleep(1)
         elem.send_keys("cvong@unomaha.edu")
         time.sleep(1)
 
+        elem = driver.find_element_by_name("_save").click()
+
+        time.sleep(3)
+
         assert "Organization Added"
-        time.sleep(10)
+        time.sleep(4)
 
     def tearDown(self):
         self.driver.close()
-
+0

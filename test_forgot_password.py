@@ -13,6 +13,7 @@ class forgotPassword(unittest.TestCase):
         driver = self.driver
         driver.maximize_window()
         driver.get("https://blai.pythonanywhere.com/")
+        time.sleep(3)
         elem = driver.find_element_by_xpath("//ul[2]/li[2]/a").click()
         time.sleep(3)
         elem = driver.find_element_by_xpath("// div / div / div / form / button").click()
@@ -24,7 +25,7 @@ class forgotPassword(unittest.TestCase):
         time.sleep(3)
 
         assert "Email Sent"
-        time.sleep(10)
+        time.sleep(4)
 
     def tearDown(self):
         self.driver.close()
