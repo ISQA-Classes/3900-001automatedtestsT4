@@ -27,13 +27,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$Unittests_in_test_addact_admin_py.coverage" NAME="Unittests in test_addact_admin.py Coverage Results" MODIFIED="1555519012620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$Unittests_in_test_addorganization_admin_py.coverage" NAME="Unittests in test_addorganization_admin.py Coverage Results" MODIFIED="1555564765690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$Unittests_in_applying_for_activity_py.coverage" NAME="Unittests in applying_for_activity.py Coverage Results" MODIFIED="1556088657270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$activity8.coverage" NAME="activity8 Coverage Results" MODIFIED="1555125747325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/103A681F-B5CE-4AAE-9E67-5535DC8FA539" />
     <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$Unittests_in_test_forgot_password_py.coverage" NAME="Unittests in test_forgot_password.py Coverage Results" MODIFIED="1555564842050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$Unittests_in_volunteer_login_py.coverage" NAME="Unittests in volunteer_login.py Coverage Results" MODIFIED="1554912905093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$Unittests_in_test_addorganization_admin_py.coverage" NAME="Unittests in test_addorganization_admin.py Coverage Results" MODIFIED="1555564765690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$test_suite.coverage" NAME="test_suite Coverage Results" MODIFIED="1556118934837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$Unittests_in_applying_for_activity_py.coverage" NAME="Unittests in applying_for_activity.py Coverage Results" MODIFIED="1556088657270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$Unittests_in_test_addact_admin_py.coverage" NAME="Unittests in test_addact_admin.py Coverage Results" MODIFIED="1555519012620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3900_001automatedtestsT4$activity8.coverage" NAME="activity8 Coverage Results" MODIFIED="1555125747325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/103A681F-B5CE-4AAE-9E67-5535DC8FA539" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -88,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="727" />
@@ -259,9 +259,9 @@
       <item itemvalue="Python.add_activity_ATS" />
       <item itemvalue="Python.volunteer_login" />
       <item itemvalue="Python.volunteer_signup" />
+      <item itemvalue="Python.test_suite" />
       <item itemvalue="Python tests.Unittests in search_activity.py" />
       <item itemvalue="Python tests.Unittests in test_addact_admin.py" />
-      <item itemvalue="Python.test_suite" />
     </list>
     <recent_temporary>
       <list>
