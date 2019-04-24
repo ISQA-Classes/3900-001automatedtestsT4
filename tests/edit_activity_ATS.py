@@ -10,7 +10,7 @@ class Edit(unittest.TestCase):
         self.driver = webdriver.Chrome()
 
     def test_add_activity(self):
-        user = "instructor1"
+        user = "instructor"
         pwd = "instructor1a"
 
         driver = self.driver
