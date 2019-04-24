@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 
-class Blog_ATS(unittest.TestCase):
+class Org_Signup_ATS(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
@@ -21,9 +21,12 @@ class Blog_ATS(unittest.TestCase):
         id_password = "instructor1a"
         id_password2 = "instructor1a"
 
+        user = "bill"
+        pwd = "instructor1a"
+
         driver = self.driver
         driver.maximize_window()
-        driver.get("https://blai.pythonanywhere.com/OrganizationRegistration")
+        driver.get("https://cvong1001.pythonanywhere.com/OrganizationRegistration")
         elem = driver.find_element_by_id("id_name")
         elem.send_keys(id_name)
         elem = driver.find_element_by_id("id_address")
@@ -45,14 +48,18 @@ class Blog_ATS(unittest.TestCase):
         elem = driver.find_element_by_id("id_password2")
         elem.send_keys(id_password2)
         elem.send_keys(Keys.RETURN)
-        time.sleep(100)
-
-        elem = driver.find_element_by_xpath("/html/body/div/div/div/div/form/button").click()
         time.sleep(5)
         assert "Completed Sign Up"
-        #driver.get("http://127.0.0.1:8000")
-        time.sleep(10)
-        #driver.get("http://127.0.0.1:8000")
+
+        driver.get("https://cvong1001.pythonanywhere.com/login")
+        elem = driver.find_element_by_id("id_username")
+        elem.send_keys(user)
+        elem = driver.find_element_by_id("id_password")
+        elem.send_keys(pwd)
+        elem.send_keys(Keys.RETURN)
+        time.sleep(3)
+
+        assert "Login Success"
 
     def tearDown(self):
         self.driver.close()

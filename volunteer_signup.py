@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 
-class OrganizerSignupATS(unittest.TestCase):
+class VolunteerSignupATS(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
@@ -19,7 +19,7 @@ class OrganizerSignupATS(unittest.TestCase):
 
         driver = self.driver
         driver.maximize_window()
-        driver.get("http://127.0.0.1:8000/register")
+        driver.get("https://cvong1001.pythonanywhere.com/register")
         elem = driver.find_element_by_id("id_first_name")
         elem.send_keys(id_first_name)
         time.sleep(3)
@@ -37,9 +37,9 @@ class OrganizerSignupATS(unittest.TestCase):
         time.sleep(3)
         elem = driver.find_element_by_id("id_password2")
         elem.send_keys(id_password2)
-        time.sleep(10)
+        time.sleep(3)
         elem.send_keys(Keys.RETURN)
-        time.sleep(5)
+        time.sleep(3)
 
     def tearDown(self):
         self.driver.close()

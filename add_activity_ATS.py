@@ -34,11 +34,11 @@ class AddActivity_ATS(unittest.TestCase):
        time.sleep(2)
 
        elem = driver.find_element_by_id("id_title")
-       elem.send_keys("Serving food to Street people")
+       elem.send_keys("Feeding the Homeless")
        time.sleep(1)
 
        elem = driver.find_element_by_id("id_description")
-       elem.send_keys(" Help our Organization to serve street people in Downtown, Omaha on May 12, 2019.")
+       elem.send_keys("Help our Organization to serve Homeless people in Downtown, Omaha on May 12, 2019.")
        select = Select(driver.find_element_by_id("id_type"))
        time.sleep(1)
 
@@ -67,10 +67,11 @@ class AddActivity_ATS(unittest.TestCase):
        driver.get("https://cvong1001.pythonanywhere.com/activity_list")
        time.sleep(3)
 
-       def tearDown(self):
-           self.driver.close()
+   def tearDown(self):
+       self.driver.close()
 
-   if __name__ == "__main__":
-       unittest.main()
+
+if __name__ == "__main__":
+   unittest.main()
 
 

@@ -10,33 +10,33 @@ class SearchActivity_ATS(unittest.TestCase):
        self.driver = webdriver.Chrome()
 
    def test_search_activity(self):
-       user = "vearth"
-       pwd = "instructor1a"
+       user = "opendoormission"
+       pwd = "test"
 
        driver = self.driver
        driver.maximize_window()
-       driver.get("http://127.0.0.1:8000/login")
+       driver.get("http://cvong1001.pythonanywhere.com/login")
        elem = driver.find_element_by_id("id_username")
        elem.send_keys(user)
        elem = driver.find_element_by_id("id_password")
        elem.send_keys(pwd)
        elem.send_keys(Keys.RETURN)
-       time.sleep(5)
+       time.sleep(3)
 
        #path to view activity list
-       driver.get("http://127.0.0.1:8000/activity_list")
+       driver.get("http://cvong1001.pythonanywhere.com/activity_list")
        time.sleep(2)
 
        # path for Add activity
-       driver.get("http://127.0.0.1:8000/activity_new")
+       driver.get("http://cvong1001.pythonanywhere.com/activity_new")
        time.sleep(2)
 
        elem = driver.find_element_by_id("id_title")
-       elem.send_keys("Serving free Mexican food to Street people")
+       elem.send_keys("Serving free Mexican food to people")
        time.sleep(1)
 
        elem = driver.find_element_by_id("id_description")
-       elem.send_keys(" Help our Organization to serve street people in Downtown, Omaha on May 12, 2019.")
+       elem.send_keys(" Help our Organization to serve street food for people in Benson, Omaha on May 12, 2019.")
        select = Select(driver.find_element_by_id("id_type"))
        time.sleep(1)
 
@@ -57,23 +57,24 @@ class SearchActivity_ATS(unittest.TestCase):
        elem.send_keys("2019-05-12 14:00:00")
        time.sleep(2)
 
-        #path for Save the new activity
+        # path for Save the new activity
        elem = driver.find_element_by_xpath("/html/body/div/div/div/form/button").click()
        time.sleep(2)
        assert "New activity Created"
 
-       driver.get("http://127.0.0.1:8000/activity_list")
-       time.sleep(7)
+       driver.get("http://cvong1001.pythonanywhere.com/volunteer_list")
+       time.sleep(2)
 
        elem = driver.find_element_by_id("id_title")
        elem.send_keys("Mexican")
-       time.sleep(10)
+       time.sleep(3)
 
        elem = driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/form/button").click()
-       time.sleep(5)
+       time.sleep(2)
 
        def tearDown(self):
            self.driver.close()
+
 
 if __name__ == "__main__":
     unittest.main()

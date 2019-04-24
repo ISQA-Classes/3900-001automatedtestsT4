@@ -16,7 +16,7 @@ class AddProfileAdminATS(unittest.TestCase):
         # Create profile in admin page
         driver = self.driver
         driver.maximize_window()
-        driver.get("https://blai.pythonanywhere.com/admin/")
+        driver.get("http://cvong1001.pythonanywhere.com/admin/")
         elem = driver.find_element_by_id("id_username")
         elem.send_keys(user)
         elem = driver.find_element_by_id("id_password")
@@ -24,7 +24,7 @@ class AddProfileAdminATS(unittest.TestCase):
         elem.send_keys(Keys.RETURN)
         time.sleep(2)
 
-        driver.get("https://blai.pythonanywhere.com/admin/volunnet/profile/add/")
+        driver.get("http://cvong1001.pythonanywhere.com/admin/volunnet/profile/add/")
         select = Select(driver.find_element_by_id("id_user"))
         time.sleep(2)
         select.select_by_value("2")
@@ -32,9 +32,9 @@ class AddProfileAdminATS(unittest.TestCase):
         elem = driver.find_element_by_name("_save").click()
 
         # Show in pythonanywhere
-        driver.get("https://blai.pythonanywhere.com/")
+        driver.get("http://cvong1001.pythonanywhere.com/")
         time.sleep(2)
-        driver.get("https://blai.pythonanywhere.com/profile")
+        driver.get("http://cvong1001.pythonanywhere.com//profile")
 
 
 

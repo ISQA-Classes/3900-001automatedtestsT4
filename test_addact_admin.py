@@ -16,20 +16,20 @@ class AddActivityAdminATS(unittest.TestCase):
         # Create profile in admin page
         driver = self.driver
         driver.maximize_window()
-        driver.get("https://blai.pythonanywhere.com/admin/")
+        driver.get("http://cvong1001.pythonanywhere.com/admin/")
         elem = driver.find_element_by_id("id_username")
         elem.send_keys(user)
         elem = driver.find_element_by_id("id_password")
         elem.send_keys(pwd)
         elem.send_keys(Keys.RETURN)
         time.sleep(2)
-        driver.get("https://blai.pythonanywhere.com/admin/volunnet/activity/add/")
+        driver.get("http://cvong1001.pythonanywhere.com/admin/volunnet/activity/add/")
 
         # Inputs for activity
         elem = driver.find_element_by_id("id_title")
         elem.send_keys("Picking up litter in Dundee!")
         elem = driver.find_element_by_id("id_description")
-        elem.send_keys("Looking for 3 volunteers who want to help my non-profit! We plan on doing it muliple times a"
+        elem.send_keys("Looking for 3 volunteers who want to help my non-profit! We plan on doing it multiple times a "
                        "month, so keep any eye out for more future posts!")
         select = Select(driver.find_element_by_id("id_type"))
         time.sleep(2)
@@ -54,9 +54,9 @@ class AddActivityAdminATS(unittest.TestCase):
         elem = driver.find_element_by_name("_save").click()
 
         # Show in pythonanywhere
-        driver.get("https://blai.pythonanywhere.com/")
+        driver.get("http://cvong1001.pythonanywhere.com")
         time.sleep(2)
-        driver.get("https://blai.pythonanywhere.com/activity_list")
+        driver.get("http://cvong1001.pythonanywhere.com/activity_list")
 
         assert "New activity Created"
         time.sleep(3)

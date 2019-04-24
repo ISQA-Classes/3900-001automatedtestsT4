@@ -9,7 +9,7 @@ class apply(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
 
-    def test_blog(self):
+    def apply(self):
         driver = self.driver
         driver.maximize_window()
         driver.get("https://cvong1001.pythonanywhere.com")
@@ -53,8 +53,10 @@ class apply(unittest.TestCase):
         time.sleep(3)
 
         assert "Organization Added"
-        time.sleep(4)
+        time.sleep(3)
 
     def tearDown(self):
         self.driver.close()
-0
+
+if __name__ == "__main__":
+   unittest.main()
