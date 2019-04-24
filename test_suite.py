@@ -2,7 +2,7 @@ import unittest
 
 
 from tests.add_activity_ATS import AddActivity_ATS
-from tests.edit_activity_ATS import EditActivity_ATS
+from tests.edit_activity_ATS import Edit
 from tests.organization_signup import Org_Signup_ATS
 from tests.search_activity import SearchActivity_ATS
 from tests.test_addact_admin import AddActivityAdminATS
@@ -15,7 +15,7 @@ from tests.apply_ATS import apply
 from tests.delete_activity_ATS import EditActivity_ATS
 
 tc1 = unittest.TestLoader().loadTestsFromTestCase(AddActivity_ATS)
-tc2 = unittest.TestLoader().loadTestsFromTestCase(EditActivity_ATS)
+tc2 = unittest.TestLoader().loadTestsFromTestCase(Edit)
 tc3 = unittest.TestLoader().loadTestsFromTestCase(Org_Signup_ATS)
 tc4 = unittest.TestLoader().loadTestsFromTestCase(AddOrgAdmin)
 tc5 = unittest.TestLoader().loadTestsFromTestCase(AddProfileAdminATS)
