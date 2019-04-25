@@ -46,10 +46,6 @@ class apply(unittest.TestCase):
 
         elem = driver.find_element_by_xpath("//div/div/div/form/button").click()
 
-
-
-       # elem = driver.find_element_by_name("_save").click()
-
         time.sleep(3)
 
         assert "Organization Added"

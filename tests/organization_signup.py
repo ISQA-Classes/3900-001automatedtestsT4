@@ -27,6 +27,7 @@ class Org_Signup_ATS(unittest.TestCase):
         driver = self.driver
         driver.maximize_window()
         driver.get("https://cvong1001.pythonanywhere.com/OrganizationRegistration")
+        time.sleep(2)
         elem = driver.find_element_by_id("id_name")
         elem.send_keys(id_name)
         elem = driver.find_element_by_id("id_address")
